@@ -83,6 +83,13 @@ yarn build:prod && yarn server
 // succ ci
 
 yarn add firebase angularfire2 firebaseui firebaseui-angular
+ng serve -o
+// edit ci
+
 yarn build:prod && yarn server
-// edit 
+
+ReferenceError: window is not defined
+
+yarn add domino
+// edit server.ts ci
 ```
