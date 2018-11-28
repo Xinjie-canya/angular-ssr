@@ -14,6 +14,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { FirebaseUIModule } from 'firebaseui-angular';
 import { firebaseConfig, firebaseUiAuthConfig } from './config';
+import { UserComponent } from './user/user.component';
 
 console.log('firebaseui', firebaseUiAuthConfig);
 
@@ -21,7 +22,8 @@ console.log('firebaseui', firebaseUiAuthConfig);
   declarations: [
     AppComponent,
     UsersComponent,
-    PostsComponent
+    PostsComponent,
+    UserComponent
   ],
   imports: [
     CommonModule,
