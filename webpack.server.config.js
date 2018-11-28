@@ -9,7 +9,7 @@ module.exports = {
     server: './server.ts',
   },
   target: 'node',
-  resolve: { extensions: ['.ts', '.js'] },
+  resolve: { extensions: ['.ts', '.js', '.json', '.node'] },
   externals: [/(node_modules|main\..*\.js)/,],
   output: {
     libraryTarget: 'commonjs2',
@@ -18,7 +18,8 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.ts$/, loader: 'ts-loader' }
+      { test: /\.ts$/, loader: 'ts-loader' },
+      { test: /\.node/, loader: 'node-loader' }
     ]
   },
   optimization: {
