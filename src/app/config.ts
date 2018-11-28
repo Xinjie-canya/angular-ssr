@@ -24,10 +24,10 @@ export const firebaseUiAuthConfig: firebaseui.auth.Config = {
 };
 
 export const firebaseConfig = {
-  apiKey: 'AIzaSyCBkE8UV7x60XzZp-KrX-KYIz7lOdNd9Po',
-  authDomain: 'staging-can-work.firebaseapp.com',
-  databaseURL: 'https://staging-can-work.firebaseio.com',
-  projectId: 'staging-can-work',
-  storageBucket: 'staging-can-work.appspot.com',
-  messagingSenderId: '320531765618'
+  apiKey: 'AIzaSyCN8yqwRhPKwIZ1v__RYIyJRbKTWFstKns',
+  authDomain: 'canseek-local.firebaseapp.com',
+  databaseURL: 'https://canseek-local.firebaseio.com',
+  projectId: 'canseek-local',
+  storageBucket: 'canseek-local.appspot.com',
+  messagingSenderId: '287939724872'
 };

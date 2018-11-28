@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../seo.service';
 
 @Component({
   selector: 'app-posts',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./posts.component.sass']
 })
 export class PostsComponent implements OnInit {
-
-  constructor() { }
+  posts: any;
+  constructor(
+    private s: SeoService
+  ) { }
 
   ngOnInit() {
+    this.s.getPosts()
+    .subscribe(posts => {
+      this.posts = posts;
+    });
   }
 
 }

@@ -9,12 +9,13 @@ import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 
 import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { FirebaseUIModule } from 'firebaseui-angular';
 import { firebaseConfig, firebaseUiAuthConfig } from './config';
 
-console.log(firebaseUiAuthConfig);
+console.log('firebaseui', firebaseUiAuthConfig);
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ console.log(firebaseUiAuthConfig);
     NgtUniversalModule,
 
     AngularFireAuthModule,
+    AngularFirestoreModule,
     AngularFireModule.initializeApp(firebaseConfig),
 
     FirebaseUIModule.forRoot(firebaseUiAuthConfig),
