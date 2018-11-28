@@ -8,6 +8,14 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { FirebaseUIModule } from 'firebaseui-angular';
+import { firebaseConfig, firebaseUiAuthConfig } from './config';
+
+console.log(firebaseUiAuthConfig);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +26,10 @@ import { PostsComponent } from './posts/posts.component';
     CommonModule,
     NgtUniversalModule,
 
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(firebaseConfig),
 
+    FirebaseUIModule.forRoot(firebaseUiAuthConfig),
     AppRoutingModule
   ],
   providers: [],

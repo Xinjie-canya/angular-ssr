@@ -3,4 +3,6 @@
   <li><a routerLink="posts">posts</a></li>
 </ul>
 
+<firebase-ui (signInSuccessWithAuthResult)="onFirebaseLogin($event)"></firebase-ui>
+
 <router-outlet></router-outlet>

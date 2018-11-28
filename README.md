@@ -81,4 +81,8 @@ npm ERR! errno 2
 yarn add electron node-loader
 yarn build:prod && yarn server
 // succ ci
+
+yarn add firebase angularfire2 firebaseui firebaseui-angular
+yarn build:prod && yarn server
+// edit 
 ```
