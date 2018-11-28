@@ -18,13 +18,13 @@ export class AppComponent {
   constructor(
     private afa: AngularFireAuth,
   ) {
-    this.afa.authState.subscribe(auth => console.log(auth));
+    this.afa.authState.subscribe(auth => console.log('angularfire auth', auth));
 
     if (window.web3) {
       const web3 = new Web3(window.web3.currentProvider);
 
       web3.eth.net.getId().then(netId => {
-        console.log(netId);
+        console.log('web3', netId);
       });
     }
   }
