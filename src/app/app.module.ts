@@ -8,8 +8,8 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { FirebaseUIModule } from 'firebaseui-angular';
 import { firebaseConfig, firebaseUiAuthConfig } from './config';

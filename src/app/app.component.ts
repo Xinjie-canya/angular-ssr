@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FirebaseUISignInSuccessWithAuthResult } from 'firebaseui-angular';
-import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 declare let require: any;
 declare let window: any;
