@@ -92,4 +92,9 @@ ReferenceError: window is not defined
 
 yarn add domino
 // edit server.ts ci
+
+var GoogleAuthProvider = firebase_app__WEBPACK_IMPORTED_MODULE_3__["auth"].GoogleAuthProvider;
+                                                                           ^
+
+TypeError: Cannot read property 'GoogleAuthProvider' of undefined
 ```

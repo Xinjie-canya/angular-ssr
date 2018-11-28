@@ -163,11 +163,6 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/fire@5.1.0":
-  version "5.1.0"
-  resolved "http://registry.npm.taobao.org/@angular/fire/download/@angular/fire-5.1.0.tgz#23ed3f2d14e0a64583b338feb9f5e1fad16e71fe"
-  integrity sha1-I+0/LRTgpkWDszj+ufXh+tFucf4=
-
 "@angular/forms@~7.0.0":
   version "7.0.4"
   resolved "http://registry.npm.taobao.org/@angular/forms/download/@angular/forms-7.0.4.tgz#5f2328d297f5c7f9f3af81e1f76a13e1546c743f"
@@ -841,13 +836,6 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/amdefine/download/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
-
-angularfire2@^5.1.0:
-  version "5.1.0"
-  resolved "http://registry.npm.taobao.org/angularfire2/download/angularfire2-5.1.0.tgz#4518980b6e6a691dd896b5c1a9fd81c66a3db162"
-  integrity sha1-RRiYC25qaR3YlrXBqf2Bxmo9sWI=
-  dependencies:
-    "@angular/fire" "5.1.0"
 
 ansi-colors@^3.0.0:
   version "3.2.1"
