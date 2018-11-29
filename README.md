@@ -122,4 +122,35 @@ import 'firebase/<PACKAGE>';
 Typescript:
 import * as firebase from 'firebase/app';
 import 'firebase/<PACKAGE>';
+
+
+视频
+
+https://www.youtube.com/watch?v=gxCu5TEmxXE
+
+http function hosting
+
+
+
+https://www.youtube.com/watch?v=wij2-gyG12E
+
+firebase angular/fire meta
+
+
+
+```shell
+ng new angular-ssr && cd angular-ssr
+ng g c users
+ng g c posts
+ng g s seo --m app
+
+yarn add firebase @angular/fire web3
+```
+
+- [x] web3
+- [x] firebase & angular/fire
+- [x] Firebase-ui
+- [x] http
+- [x] change meta
+- [x] Functions
 ```

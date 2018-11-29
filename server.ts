@@ -10,6 +10,11 @@ global['navigator'] = win.navigator;
 
 (global as any).XMLHTTPRequest = require('xmlhttprequest').XMLHTTPRequest;
 
+win.JSON = JSON;
+win.JSON.stringify = JSON.stringify;
+win.JSON.parse = JSON.parse;
+global['JSON'] = win.JSON;
+
 import { enableProdMode } from '@angular/core';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
