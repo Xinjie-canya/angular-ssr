@@ -1,3 +1,5 @@
-<p>
-  users works!
-</p>
+<ul>
+  <li *ngFor="let item of users">
+    <a routerLink="/user/{{ item.name }}">{{ item.name }}</a>
+  </li>
+</ul>

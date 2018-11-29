@@ -8,6 +8,8 @@ global['window'] = win;
 global['document'] = win.document;
 global['navigator'] = win.navigator;
 
+(global as any).XMLHTTPRequest = require('xmlhttprequest').XMLHTTPRequest;
+
 import { enableProdMode } from '@angular/core';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';

@@ -12,10 +12,11 @@ export class SeoService {
     private af: AngularFirestore,
     private meta: Meta,
     private title: Title,
+
   ) { }
 
-  getPosts(): Observable<any[]> {
-    return this.af.collection('posts').valueChanges();
+  getUsers(): Observable<any[]> {
+    return this.af.collection('users').valueChanges();
   }
 
   generateTags(tags) {
