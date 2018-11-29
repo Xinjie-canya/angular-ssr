@@ -29,7 +29,7 @@ console.log('firebaseui', firebaseUiAuthConfig);
     BrowserTransferStateModule,
 
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
     NgtUniversalModule,
 
     AngularFireAuthModule,
