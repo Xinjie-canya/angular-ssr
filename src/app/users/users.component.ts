@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '../seo.service';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+const FETCH_URL = 'https://www.mocky.io/v2/5c0011db3200000e00b28690';
 
 @Component({
   selector: 'app-users',
@@ -7,13 +10,14 @@ import { SeoService } from '../seo.service';
   styleUrls: ['./users.component.sass']
 })
 export class UsersComponent implements OnInit {
-  users: any;
+  users$: Observable<any>;
   constructor(
-    private seo: SeoService
-  ) { }
+    private http: HttpClient,
+  ) {
+    this.users$ = this.http.get(FETCH_URL);
+  }
 
   ngOnInit() {
-    this.seo.getUsers().subscribe(users => this.users = users);
   }
 
 }

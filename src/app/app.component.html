@@ -1,9 +1,13 @@
 <ul>
-  <li><a routerLink="users">users</a></li>
+  <li>
+    <a routerLink="login">login</a>
+  </li>
+  <li>
+    <a routerLink="users">users</a>
+  </li>
+  <li>
+    <a routerLink="web3">web3</a>
+  </li>
 </ul>
 
 <router-outlet></router-outlet>
-
-<p *ngIf="httpResult">httpResult</p>
-
-<firebase-ui (signInSuccessWithAuthResult)="onFirebaseLogin($event)"></firebase-ui>
