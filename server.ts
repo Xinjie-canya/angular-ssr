@@ -8,7 +8,7 @@ global['window'] = win;
 global['document'] = win.document;
 global['navigator'] = win.navigator;
 
-(global as any).XMLHTTPRequest = require('xmlhttprequest').XMLHTTPRequest;
+(global as any).XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 
 win.JSON = JSON;
 win.JSON.stringify = JSON.stringify;

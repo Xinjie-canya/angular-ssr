@@ -153,4 +153,30 @@ yarn add firebase @angular/fire web3
 - [x] http
 - [x] change meta
 - [x] Functions
+
+
+ master)
+Author: Xinjie-canya <xinjie@canya.com>
+Date:   Fri Nov 30 01:56:32 2018 +0800
+
+    rm login module
+
+commit 0e12ec98887e78b95e2ff2a9669b6658f57449ba
+Author: Xinjie-canya <xinjie@canya.com>
+Date:   Fri Nov 30 01:51:34 2018 +0800
+
+    fix json error
+
+Listening on: http://localhost:8080
+ERROR { [Error: The XMLHttpRequest compatibility library was not found.]
+  code: 'auth/internal-error',
+  message: 'The XMLHttpRequest compatibility library was not found.' }
+{ [Error: The XMLHttpRequest compatibility library was not found.]
+  code: 'auth/internal-error',
+  message: 'The XMLHttpRequest compatibility library was not found.' }
+
+tried
+(global as any).XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+
+试试用 functions 呢??
 ```
