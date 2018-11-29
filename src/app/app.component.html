@@ -2,4 +2,5 @@
   <li><a routerLink="users">users</a></li>
 </ul>
 <router-outlet></router-outlet>
+{{ httpResult | async | json }}
 <firebase-ui (signInSuccessWithAuthResult)="onFirebaseLogin($event)"></firebase-ui>

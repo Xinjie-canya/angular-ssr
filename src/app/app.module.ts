@@ -1,5 +1,6 @@
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -28,6 +29,7 @@ console.log('firebaseui', firebaseUiAuthConfig);
     BrowserTransferStateModule,
 
     CommonModule,
+    HttpClientModule
     NgtUniversalModule,
 
     AngularFireAuthModule,
