@@ -33,7 +33,7 @@ export class SeoService {
     this.title.setTitle(tags.title);
 
     // set meta tags
-    this.meta.updateTag({name: 'name', content: 'content'});
-    this.meta.updateTag({name: 'twitter:title', content: tags.title});
+    this.meta.updateTag({name: 'name', content: tags.title});
+    this.meta.updateTag({name: 'description', content: tags.description });
   }
 }

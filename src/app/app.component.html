@@ -1,6 +1,9 @@
 <ul>
   <li><a routerLink="users">users</a></li>
 </ul>
+
 <router-outlet></router-outlet>
-{{ httpResult | async | json }}
+
+<p *ngIf="httpResult">httpResult</p>
+
 <firebase-ui (signInSuccessWithAuthResult)="onFirebaseLogin($event)"></firebase-ui>
