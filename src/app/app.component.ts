@@ -12,6 +12,6 @@ export class AppComponent {
   constructor(
     private afa: AngularFireAuth,
   ) {
-    this.afa.authState.subscribe(auth => console.log('angularfire auth', auth));
+    this.afa.authState.subscribe(auth => console.log('angularfire auth changed'));
   }
 }

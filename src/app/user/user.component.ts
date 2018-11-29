@@ -40,7 +40,6 @@ export class UserComponent implements OnInit {
           title: user.name,
           description: user.desc
         });
-        console.log('user', user);
       }),
       startWith(exists)
     );
