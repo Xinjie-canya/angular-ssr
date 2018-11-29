@@ -11,13 +11,13 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
-// import { FirebaseUIModule } from 'firebaseui-angular';
-// import { firebaseUiAuthConfig } from './config';
+import { FirebaseUIModule } from 'firebaseui-angular';
+import { firebaseUiAuthConfig } from './config';
 
 import { firebaseConfig } from './config';
 
 import { UserComponent } from './user/user.component';
-// import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 import { Web3Component } from './web3/web3.component';
 
@@ -25,7 +25,7 @@ import { Web3Component } from './web3/web3.component';
   declarations: [
     AppComponent,
     UserComponent,
-    // LoginComponent,
+    LoginComponent,
     UsersComponent,
     Web3Component
   ],
@@ -41,7 +41,7 @@ import { Web3Component } from './web3/web3.component';
     AngularFirestoreModule,
     AngularFireModule.initializeApp(firebaseConfig),
 
-    // FirebaseUIModule.forRoot(firebaseUiAuthConfig),
+    FirebaseUIModule.forRoot(firebaseUiAuthConfig),
     AppRoutingModule
   ],
   providers: [],
